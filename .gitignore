@@ -1,0 +1,12 @@
+*.cof
+*.ccspjt
+*.err
+*.lst
+*.esym
+Code/Main.STA
+*.sym
+Code/__history/*
+*.xsym
+*.doc
+*.rar
+*.tre
