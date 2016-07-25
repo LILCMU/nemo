@@ -1,0 +1,157 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 21/7/2559 15:25:13
+
+BeginCmp
+TimeStamp = /577A0FF0;
+Reference = C1;
+ValeurCmp = 0.1uF;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /577A1BAA;
+Reference = C2;
+ValeurCmp = 1nF;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /577A18A8;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /577A10F8;
+Reference = D2;
+ValeurCmp = DIODE;
+IdModule  = DO-214AA(SMB);
+EndCmp
+
+BeginCmp
+TimeStamp = /577A1116;
+Reference = D3;
+ValeurCmp = DIODE;
+IdModule  = DO-214AA(SMB);
+EndCmp
+
+BeginCmp
+TimeStamp = /577A1024;
+Reference = P1;
+ValeurCmp = CONN_5;
+IdModule  = bornier5;
+EndCmp
+
+BeginCmp
+TimeStamp = /577A14B5;
+Reference = P2;
+ValeurCmp = Float;
+IdModule  = bornier3;
+EndCmp
+
+BeginCmp
+TimeStamp = /577A17D5;
+Reference = P3;
+ValeurCmp = +5v;
+IdModule  = bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /577A19F0;
+Reference = P4;
+ValeurCmp = Meter;
+IdModule  = bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /577A1A13;
+Reference = P5;
+ValeurCmp = Sensor;
+IdModule  = bornier3;
+EndCmp
+
+BeginCmp
+TimeStamp = /577A1A2C;
+Reference = P6;
+ValeurCmp = PIC;
+IdModule  = bornier3;
+EndCmp
+
+BeginCmp
+TimeStamp = /57908404;
+Reference = Q1;
+ValeurCmp = MOSFET_N;
+IdModule  = SOT23GDS;
+EndCmp
+
+BeginCmp
+TimeStamp = /579084CF;
+Reference = Q2;
+ValeurCmp = MOSFET_N;
+IdModule  = SOT23GDS;
+EndCmp
+
+BeginCmp
+TimeStamp = /577A18E4;
+Reference = R1;
+ValeurCmp = 100;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /577A1201;
+Reference = R2;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /577A1210;
+Reference = R3;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /577A1520;
+Reference = R4;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /577A152F;
+Reference = R5;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /577A1E59;
+Reference = R6;
+ValeurCmp = 33k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5785E8C6;
+Reference = R7;
+ValeurCmp = 100;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5785EE12;
+Reference = R8;
+ValeurCmp = 100;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /57907AD3;
+Reference = U1;
+ValeurCmp = L9110;
+IdModule  = so-8;
+EndCmp
+
+EndListe

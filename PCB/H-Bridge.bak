@@ -1,0 +1,231 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "4 jul 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_2 P1
+U 1 1 577A0403
+P 3200 3750
+F 0 "P1" V 3150 3750 40  0000 C CNN
+F 1 "Motor" V 3250 3750 40  0000 C CNN
+F 2 "" H 3200 3750 60  0000 C CNN
+F 3 "" H 3200 3750 60  0000 C CNN
+	1    3200 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C1
+U 1 1 577A044D
+P 4000 3750
+F 0 "C1" H 4000 3850 40  0000 L CNN
+F 1 "0.1uF" H 4006 3665 40  0000 L CNN
+F 2 "~" H 4038 3600 30  0000 C CNN
+F 3 "~" H 4000 3750 60  0000 C CNN
+	1    4000 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIL8 P2
+U 1 1 577A0622
+P 4750 3750
+F 0 "P2" H 4750 4000 60  0000 C CNN
+F 1 "L9110" V 4750 3750 50  0000 C CNN
+F 2 "" H 4750 3750 60  0000 C CNN
+F 3 "" H 4750 3750 60  0000 C CNN
+	1    4750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_4 P3
+U 1 1 577A0635
+P 6050 3750
+F 0 "P3" V 6000 3750 50  0000 C CNN
+F 1 "Output" V 6100 3750 50  0000 C CNN
+F 2 "" H 6050 3750 60  0000 C CNN
+F 3 "" H 6050 3750 60  0000 C CNN
+	1    6050 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 577A0656
+P 5500 3000
+F 0 "R2" V 5580 3000 40  0000 C CNN
+F 1 "10k" V 5507 3001 40  0000 C CNN
+F 2 "~" V 5430 3000 30  0000 C CNN
+F 3 "~" H 5500 3000 30  0000 C CNN
+	1    5500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 577A0665
+P 5300 3000
+F 0 "R1" V 5380 3000 40  0000 C CNN
+F 1 "10k" V 5307 3001 40  0000 C CNN
+F 2 "~" V 5230 3000 30  0000 C CNN
+F 3 "~" H 5300 3000 30  0000 C CNN
+	1    5300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR01
+U 1 1 577A0674
+P 5400 2600
+F 0 "#PWR01" H 5400 2690 20  0001 C CNN
+F 1 "+5V" H 5400 2690 30  0000 C CNN
+F 2 "" H 5400 2600 60  0000 C CNN
+F 3 "" H 5400 2600 60  0000 C CNN
+	1    5400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 577A0683
+P 4250 3250
+F 0 "#PWR02" H 4250 3340 20  0001 C CNN
+F 1 "+5V" H 4250 3340 30  0000 C CNN
+F 2 "" H 4250 3250 60  0000 C CNN
+F 3 "" H 4250 3250 60  0000 C CNN
+	1    4250 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 577A0692
+P 5300 4200
+F 0 "#PWR03" H 5300 4200 30  0001 C CNN
+F 1 "GND" H 5300 4130 30  0001 C CNN
+F 2 "" H 5300 4200 60  0000 C CNN
+F 3 "" H 5300 4200 60  0000 C CNN
+	1    5300 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3650 3650 3650
+Wire Wire Line
+	3650 3650 3650 3550
+Wire Wire Line
+	3650 3550 4300 3550
+Wire Wire Line
+	3550 3850 3650 3850
+Wire Wire Line
+	3650 3850 3650 3950
+Wire Wire Line
+	3650 3950 4300 3950
+Wire Wire Line
+	4300 3950 4300 3900
+Wire Wire Line
+	4300 3900 4400 3900
+Connection ~ 4000 3950
+Wire Wire Line
+	4300 3550 4300 3600
+Wire Wire Line
+	4300 3600 4400 3600
+Connection ~ 4000 3550
+Wire Wire Line
+	4250 3250 4250 3800
+Wire Wire Line
+	4250 3800 4400 3800
+Wire Wire Line
+	4250 3700 4400 3700
+Connection ~ 4250 3700
+Wire Wire Line
+	5300 4200 5300 3600
+Wire Wire Line
+	5300 3600 5100 3600
+Wire Wire Line
+	5100 3900 5700 3900
+Connection ~ 5300 3900
+Wire Wire Line
+	5100 3800 5700 3800
+Wire Wire Line
+	5300 3250 5300 3450
+Wire Wire Line
+	5300 3450 5400 3450
+Wire Wire Line
+	5100 3700 5700 3700
+Wire Wire Line
+	5500 3250 5500 3700
+Connection ~ 5500 3700
+Wire Wire Line
+	5400 3450 5400 3800
+Connection ~ 5400 3800
+Wire Wire Line
+	5300 2750 5300 2700
+Wire Wire Line
+	5300 2700 5700 2700
+Wire Wire Line
+	5500 2700 5500 2750
+Wire Wire Line
+	5400 2600 5400 2700
+Connection ~ 5400 2700
+Wire Wire Line
+	5700 2700 5700 3600
+Connection ~ 5500 2700
+Text Label 5000 3700 0    60   ~ 0
+IB
+Text Label 5000 3800 0    60   ~ 0
+IA
+Text Label 5000 3900 0    60   ~ 0
+GND
+Text Label 5000 3600 0    60   ~ 0
+GND
+Text Label 4500 3600 2    60   ~ 0
+OA
+Text Label 4500 3900 2    60   ~ 0
+OB
+Text Label 4500 3800 2    60   ~ 0
+VCC
+Text Label 4500 3700 2    60   ~ 0
+VCC
+Text Label 5800 3600 2    60   ~ 0
+VCC
+Text Label 5800 3700 2    60   ~ 0
+IB
+Text Label 5800 3800 2    60   ~ 0
+IA
+Text Label 5800 3900 2    60   ~ 0
+GND
+$EndSCHEMATC

@@ -1,0 +1,234 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Valve-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "4 jul 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L NPN Q2
+U 1 1 577A0AE3
+P 5700 4450
+F 0 "Q2" H 5700 4300 50  0000 R CNN
+F 1 "2N3904" H 5700 4600 50  0000 R CNN
+F 2 "~" H 5700 4450 60  0000 C CNN
+F 3 "~" H 5700 4450 60  0000 C CNN
+	1    5700 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L NPN Q1
+U 1 1 577A0AF7
+P 5700 3700
+F 0 "Q1" H 5700 3550 50  0000 R CNN
+F 1 "2N3904" H 5700 3850 50  0000 R CNN
+F 2 "~" H 5700 3700 60  0000 C CNN
+F 3 "~" H 5700 3700 60  0000 C CNN
+	1    5700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_5 P1
+U 1 1 577A0B3B
+P 4250 3950
+F 0 "P1" V 4200 3950 50  0000 C CNN
+F 1 "Valve" V 4300 3950 50  0000 C CNN
+F 2 "" H 4250 3950 60  0000 C CNN
+F 3 "" H 4250 3950 60  0000 C CNN
+	1    4250 3950
+	-1   0    0    1   
+$EndComp
+Text Label 4550 3750 0    60   ~ 0
+Yellow
+Text Label 4550 3850 0    60   ~ 0
+Blue
+Text Label 4550 3950 0    60   ~ 0
+Red
+Text Label 4550 4050 0    60   ~ 0
+Green
+Text Label 4550 4150 0    60   ~ 0
+Black
+$Comp
+L DIODE D1
+U 1 1 577A0BBC
+P 6200 3700
+F 0 "D1" H 6200 3800 40  0000 C CNN
+F 1 "DIODE" H 6200 3600 40  0000 C CNN
+F 2 "~" H 6200 3700 60  0000 C CNN
+F 3 "~" H 6200 3700 60  0000 C CNN
+	1    6200 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DIODE D2
+U 1 1 577A0BCB
+P 6200 4450
+F 0 "D2" H 6200 4550 40  0000 C CNN
+F 1 "DIODE" H 6200 4350 40  0000 C CNN
+F 2 "~" H 6200 4450 60  0000 C CNN
+F 3 "~" H 6200 4450 60  0000 C CNN
+	1    6200 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 3500 6700 3500
+Wire Wire Line
+	5800 3900 6450 3900
+Wire Wire Line
+	5800 4250 6700 4250
+Wire Wire Line
+	5800 4650 6550 4650
+Wire Wire Line
+	4650 4050 5350 4050
+Wire Wire Line
+	5350 4050 5350 4450
+Wire Wire Line
+	5350 4450 5500 4450
+Wire Wire Line
+	5500 3700 5350 3700
+Wire Wire Line
+	5350 3700 5350 3950
+Wire Wire Line
+	5350 3950 4650 3950
+Wire Wire Line
+	6450 3900 6450 3250
+Wire Wire Line
+	6450 3250 4850 3250
+Wire Wire Line
+	4850 3250 4850 3750
+Wire Wire Line
+	4850 3750 4650 3750
+Connection ~ 6200 3900
+Wire Wire Line
+	6550 4650 6550 3350
+Wire Wire Line
+	6550 3350 4950 3350
+Wire Wire Line
+	4950 3350 4950 3850
+Wire Wire Line
+	4950 3850 4650 3850
+Connection ~ 6200 4650
+$Comp
+L R R1
+U 1 1 577A0C92
+P 5000 4850
+F 0 "R1" V 5080 4850 40  0000 C CNN
+F 1 "1k" V 5007 4851 40  0000 C CNN
+F 2 "~" V 4930 4850 30  0000 C CNN
+F 3 "~" H 5000 4850 30  0000 C CNN
+	1    5000 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 577A0CA1
+P 5200 4850
+F 0 "R2" V 5280 4850 40  0000 C CNN
+F 1 "1k" V 5207 4851 40  0000 C CNN
+F 2 "~" V 5130 4850 30  0000 C CNN
+F 3 "~" H 5200 4850 30  0000 C CNN
+	1    5200 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR1
+U 1 1 577A0CBA
+P 4400 4850
+F 0 "#PWR1" H 4400 4940 20  0001 C CNN
+F 1 "+5V" H 4400 4940 30  0000 C CNN
+F 2 "" H 4400 4850 60  0000 C CNN
+F 3 "" H 4400 4850 60  0000 C CNN
+	1    4400 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 577A0CC9
+P 4800 4350
+F 0 "#PWR2" H 4800 4350 30  0001 C CNN
+F 1 "GND" H 4800 4280 30  0001 C CNN
+F 2 "" H 4800 4350 60  0000 C CNN
+F 3 "" H 4800 4350 60  0000 C CNN
+	1    4800 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4150 4800 4150
+Wire Wire Line
+	4800 4150 4800 4350
+Wire Wire Line
+	4400 4850 4400 5200
+Wire Wire Line
+	4400 5200 5200 5200
+Wire Wire Line
+	5000 5200 5000 5100
+Wire Wire Line
+	5200 5200 5200 5100
+Connection ~ 5000 5200
+Wire Wire Line
+	5000 4600 5000 4050
+Connection ~ 5000 4050
+Wire Wire Line
+	5200 4600 5200 3950
+Connection ~ 5200 3950
+$Comp
+L CONN_2 P2
+U 1 1 577A0DA6
+P 7200 3850
+F 0 "P2" V 7150 3850 40  0000 C CNN
+F 1 "H-Bridge" V 7250 3850 40  0000 C CNN
+F 2 "" H 7200 3850 60  0000 C CNN
+F 3 "" H 7200 3850 60  0000 C CNN
+	1    7200 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3500 6700 3750
+Wire Wire Line
+	6700 3750 6850 3750
+Connection ~ 6200 3500
+Wire Wire Line
+	6700 4250 6700 3950
+Wire Wire Line
+	6700 3950 6850 3950
+Connection ~ 6200 4250
+$EndSCHEMATC
